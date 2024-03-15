@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Counter</h1>
+            <p id=counter>0</p>
+        </div>
+        <div class="buttons">
+            <button class="btn Decrease">Decrease</button>
+            <button class="btn Reset">Reset</button>
+            <button class="btn Increase">Increase</button>
+        </div>
+    </div>
+    <script>
+        var changeCount = document.getElementById("counter");
+        var count = changeCount.innerText;
+        var btn = document.querySelectorAll(".btn")
+
+        btn.forEach(button => {
+            button.addEventListener("click", function (e) {
+                var className = e.target.className;
+                if (className.includes("Decrease"))
+                    count = count - 1;
+                else if (className.includes("Reset"))
+                    count = 0;
+                else
+                    count = +count + 1;
+
+                changeCount.innerHTML = count;
+            })
+        })
+
+        // simple way but this can be reduced using code above
+        // decrease.addEventListener("click", function(){
+        //     count = count - 1;
+        //     changeCount.innerHTML = count;
+        // })
+        // reset.addEventListener("click", function(){
+        //     count = 0;
+        //     changeCount.innerHTML = count;
+        // })
+        // increase.addEventListener("click", function(){
+        //     count = +count + 1;
+        //     changeCount.innerHTML = count;
+        // })
+
+    </script>
+</body>
+
+</html>

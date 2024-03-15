@@ -1,0 +1,24 @@
+#header {
+    width: 100%;
+    border: 3px solid green;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+button{
+    height: 3rem;
+    width: 5rem;
+    border-radius: 20%;
+}
+
+button:hover{
+    background-color: gray;
+    color: white;
+}
