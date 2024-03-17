@@ -20,34 +20,7 @@ nav {
     display: none;
 }
 
-@media screen and (max-width: 590px) {
 
-    nav{
-        flex-direction: column;
-    }
-    .nav-top {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .btn-toggle {
-        display: inline;
-        width: 50px;
-        height: 30px;
-    }
-
-    .links{
-        flex-direction: column;
-    }
-
-    .routes{
-        flex-direction: column;
-    }
-
-    .social-links{
-        flex-direction: column;
-    }
-}
 
 .links {
     display: flex;
@@ -81,6 +54,41 @@ a {
     margin: 4px;
 }
 
-.hide-links{
-    display: none;
+
+
+@media screen and (max-width: 590px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-toggle {
+        display: inline;
+        width: 50px;
+        height: 30px;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .routes {
+        flex-direction: column;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .show-links {
+        display: flex;
+        /* transition: display 0.5s */
+    }
+    
 }

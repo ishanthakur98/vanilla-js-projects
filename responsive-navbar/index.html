@@ -32,14 +32,16 @@
         var links = document.querySelector(".links")
         var classList = links.classList;
         let btn = document.querySelector(".btn-toggle");
-        btn.addEventListener("click" , () =>{
-            if(classList.contains("hide-links")){
-                classList.remove("hide-links")
+        btn.addEventListener("click" , (e) =>{
+            console.log(classList)
+            if(classList.contains("show-links")){
+                classList.remove("show-links")
             }else{
-                classList.add("hide-links");
+                classList.add("show-links");
             }
+            // classList.toggle("hide-links")
         })
-        console.log(classList)
+        
 
     </script>
 </body>
