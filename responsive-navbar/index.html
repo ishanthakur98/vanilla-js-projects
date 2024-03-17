@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-top">
+            <img class="logo" src="images/logo.jpg" alt="" srcset="">
+            <button class="btn-toggle">open</button>
+        </div>
+        <div class="links list">
+            <ul class="routes">
+                <li class="routes-list"><a href="">Home</a></li>
+                <li class="routes-list"><a href="">About</a></li>
+                <li class="routes-list"><a href="">Help</a></li>
+                <li class="routes-list"><a href="">Contact Us</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href=""><img class="social-links-image" src="images/Facebook-Logosu.png" alt=""></a></li>
+                <li><a href=""><img class="social-links-image" src="images/LinkedIn_icon.svg.png" alt=""></a></li>
+                <li><a href=""><img class="social-links-image" src="images/Logo_of_Twitter.svg.png" alt=""></a></li>
+                <li><a href=""><img class="social-links-image" src="images/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        var links = document.querySelector(".links")
+        var classList = links.classList;
+        let btn = document.querySelector(".btn-toggle");
+        btn.addEventListener("click" , () =>{
+            if(classList.contains("hide-links")){
+                classList.remove("hide-links")
+            }else{
+                classList.add("hide-links");
+            }
+        })
+        console.log(classList)
+
+    </script>
+</body>
+</html>

@@ -45,7 +45,7 @@ document.addEventListener("click",(e)=>{
         count = 0;
     }
  }else{
-    console.log("random");
+    console.log("random surprise");
     count = Math.floor(Math.random() * (reviewList.length-1 - 0) + 0);
     console.log(count)
  }
