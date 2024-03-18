@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Click open to open modal</h2>
+            <button class="btn">Open Modal</button>
+        </div>
+    </div>
+    <div class="modal">
+        <h2>Hi there</h2>
+        <button class="btn-modal">close Modal</button>
+    </div>
+
+    <script>
+        var btn = document.querySelector(".btn");
+        var btnModal = document.querySelector(".modal");
+        var container = document.querySelector(".container");
+        var containerClassList = container.classList;
+        var classList = btnModal.classList;
+
+        var modalButton = document.querySelector(".btn-modal");
+        modalButton.addEventListener("click",(e)=> {
+            classList.remove("modal-clicked");
+           containerClassList.remove("container-fade");
+        })
+        btn.addEventListener("click",(e)=>{
+           classList.add("modal-clicked");
+           containerClassList.add("container-fade");
+        })
+    </script>
+</body>
+</html>

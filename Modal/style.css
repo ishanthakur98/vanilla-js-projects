@@ -1,0 +1,71 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/ColorFlipper//Modal//images/pexels-lukas-628281.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fade {
+    opacity: 0.2;
+  }
+
+.content{
+    border : 2px solid black;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    flex-direction: column;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+.btn:hover{
+    color: white;
+    background-color: rgb(245, 171, 171);
+    box-shadow: 1px 2px 2px 2px lightblue;
+}
+
+.modal{
+    border : 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    flex-direction: column;
+}
+
+.btn-modal{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+   /* border: 2px solid black; */
+
+}
+
+.btn-modal:hover{
+    color: white;
+    background-color: rgb(245, 171, 171);
+    box-shadow: 1px 2px 2px 2px lightblue;
+}
+
+.modal-clicked{
+    position:fixed;
+    top:calc(50% - 100px);
+    left:calc(50% - 150px);
+    width: 300px;
+    height: 200px;
+    z-index:99999;
+    box-shadow: 1px 2px 2px 2px lightblue;
+    border-radius: 10px;
+}
