@@ -3,6 +3,7 @@ var colors = ["red","green","blue","black","white"]
 function changeColor(){
     let randomNum = Math.floor(Math.random() * (4 - 0) + 0);
     var doc = document.getElementById("header");
+    
     console.log(colors[randomNum]);
     let color = colors[randomNum];
     doc.style.backgroundColor = color;

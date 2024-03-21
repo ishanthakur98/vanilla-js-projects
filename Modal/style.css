@@ -38,11 +38,11 @@
 
 .modal{
     border : 2px solid black;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
     flex-direction: column;
+    display: none;
 }
 
 .btn-modal{
@@ -68,4 +68,5 @@
     z-index:99999;
     box-shadow: 1px 2px 2px 2px lightblue;
     border-radius: 10px;
+    display: flex;
 }

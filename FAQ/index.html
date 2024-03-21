@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>General Questions</h1>
+            <ul class="modal">
+                <li class="box">
+                    <div class="Question">
+                        <p>Do you accept all major cards</p>
+                        <button class="btn">-</button>
+                    </div>
+                    <!-- <hr style="margin: 0px 10px 0 10px;"> -->
+                    <div class="answer" style="border-top:  2px solid black;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio autem tenetur itaque hic nihil mollitia corporis accusantium nam obcaecati cum iste ipsum assumenda molestias labore quia illo, alias a consectetur praesentium similique eaque. Incidunt!
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="Question">
+                        <p>Do you support local farmers</p>
+                        <button class="btn">-</button>
+                    </div>
+                    <div class="answer" style="border-top:  2px solid black;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio autem tenetur itaque hic nihil mollitia corporis accusantium nam obcaecati cum iste ipsum assumenda molestias labore quia illo, alias a consectetur praesentium similique eaque. Incidunt!
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="Question">
+                        <p>Do you use organic ingredients</p>
+                        <button class="btn">-</button>
+                    </div>
+                    <div class="answer" style="border-top:  2px solid black;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio autem tenetur itaque hic nihil mollitia corporis accusantium nam obcaecati cum iste ipsum assumenda molestias labore quia illo, alias a consectetur praesentium similique eaque. Incidunt!
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+
+        var question = document.querySelectorAll(".box");
+
+        question.forEach((q) => {
+            var btn = q.querySelector(".btn");
+          
+                btn.addEventListener("click", (e)=>{
+                    question.forEach((que) => {
+                        if(que !== q){
+                            que.querySelector(".answer").classList.remove("answer-hide")
+                        }
+                    })
+                    q.querySelector(".answer").classList.toggle("answer-hide")
+             
+            })
+
+        })
+
+        // var btn = document.querySelectorAll(".btn");
+
+        // btn.forEach(clicked => {
+        //     // console.log(clicked)
+        //     clicked.addEventListener("click",(e)=>{
+                
+        //     var clickedBlock = e.target.parentElement.parentElement;
+        //     var answer = clickedBlock.children[1].classList;
+        //     // console.log(answer)
+        //     // let answer = document.querySelector(".answer").classList;
+        //     // console.log(answer)
+        //     e.target.innerText = "-";
+        //     if(answer.toggle("answer-hide")){
+        //         e.target.innerText = "+"
+        //     } 
+        // })
+        // })
+          
+        
+        
+    </script>
+</body>
+</html>
